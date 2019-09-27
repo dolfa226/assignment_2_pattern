@@ -1,0 +1,58 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-style: normal;
+	font-weight: normal;
+}
+
+body, html{
+	padding: 0;
+	margin: 0;
+  font-size: 20px;
+  background: black;
+}
+
+
+#wrapper {
+  position:absolute;
+  left:50%;
+  transform:translateX(-50%);
+
+}
+
+
+.rec {
+  width: 25px;
+  height:25px;
+  background: black;
+  margin-top: 20px;
+  display: inline-block;
+  margin-left: -10px;
+}
+
+.rec2 {
+  width: 50px;
+  height: 50px;
+  background: teal;
+  margin: 10px;
+  display: inline-block;
+}
+
+.wrapper2 {
+  width: 100vw;
+  height: 1px;
+  background: white;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+.border {
+  border: solid white .5px;
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+
+}
+
+
+
