@@ -10,6 +10,11 @@ body, html{
 	margin: 0;
   font-size: 20px;
   background: black;
+  width: 70vw;
+  position:absolute;
+  left:50%;
+  transform:translateX(-50%);
+
 }
 
 
@@ -39,11 +44,12 @@ body, html{
 }
 
 .wrapper2 {
-  width: 100vw;
+  width: 75vw;
   height: 1px;
   background: white;
   margin-top: 10px;
   display: inline-block;
+  transform: rotate(-10deg);
 }
 
 .border {

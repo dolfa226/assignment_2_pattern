@@ -2,7 +2,7 @@ var changingColor = 10;
 
 
 
-for (var i = 0; i < 259; i++) {
+for (var i = 0; i < 351; i++) {
 
 	changingColor = changingColor + 5;
 
@@ -38,5 +38,5 @@ var myLoopFunction = function(i){
 }
 
 for (var i = 0; i < 80; i++) {
-	setTimeout(myLoopFunction, i*300, i)
+	setTimeout(myLoopFunction, i*100, i)
 }
