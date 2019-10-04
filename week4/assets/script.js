@@ -68,7 +68,6 @@ var backgroundColorChange = function(event){
 
 }
 
-// event listener: 
 window.addEventListener("mousemove", backgroundColorChange)
 
 
@@ -103,10 +102,15 @@ window.addEventListener("mousemove", backgroundColorChange)
 
 
 
+var timer = 100;
 
+var myLoopFunction = function(i){	
 
+	document.getElementById("wrapper2").insertAdjacentHTML("beforebegin", `
+		<div class="rec4";"></div>
+	 `);
+}
 
-
-
-
-
+for (var i = 0; i < 106; i++) {
+	setTimeout(myLoopFunction, i*100, i)
+}

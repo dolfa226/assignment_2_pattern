@@ -58,6 +58,22 @@ button {
   display: inline-block;
 }
 
+#wrapper2 {
+  position: fixed;
+  width: 100vw;
+  position:absolute;
+  left:50%;
+  transform:translateX(-50%);
+
+
+}
+.rec4 {
+  width: 100px;
+  height: 100px;
+  background-color: black;
+  display: inline-block;
+
+}
 
 
 
