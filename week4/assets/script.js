@@ -2,8 +2,6 @@ var changingColor = 10;
 
 for (var i = 0; i < 100; i++) {
 
-	changingColor = changingColor + 5;
-
 	var rotation = Math.round((i/20) + 30);
 
 	var skew = Math.round((i/2));
@@ -30,28 +28,25 @@ for (var i = 0; i < 100; i++) {
 var changingColor = 10;
 
 var myButton = document.querySelector("#turnRed");
-var rec = document.querySelector(".container"); 
+var container = document.querySelector(".container")
+
 
 var isThisRed = false
 
 var turnThisRed = function (){
 
 	if(isThisRed ===false){
-		rec.style.backgroundColor = "white";
+		container.style.backgroundColor = "red";
 		isThisRed = true;
 	}else{
-		rec.style.backgroundColor = "gray";
+		container.style.backgroundColor = "black";
 		isThisRed = false;
 
 	}
 }
 
-var listItems = document.getElementsByClassName("list_item");
 
 myButton.addEventListener("click", turnThisRed)
-
-
-
 
 var backgroundColorChange = function(event){
 
@@ -61,13 +56,13 @@ var backgroundColorChange = function(event){
 	// console.log("browser size: ", widthOfBrowser, heightOfBrowser)
 	// console.log("mouse position: ", event.pageX, event.pageY)
 
-	var body = document.querySelector("body");
+	var body = document.querySelector(".container");
 
 	var percentageX = event.pageX/widthOfBrowser;
 	var blue1 = 30 + (5 * (percentageX));
 
 	var percentageY = event.pageY/heightOfBrowser;
-	var blue2 = 505 * (percentageY);
+	var blue2 = 700 * (percentageY);
 
 	body.style.backgroundColor = `rgb(${ blue1 },0,${blue2})`;
 
@@ -76,6 +71,33 @@ var backgroundColorChange = function(event){
 // event listener: 
 window.addEventListener("mousemove", backgroundColorChange)
 
+
+
+// myButton.addEventListener("click", turnThisRed)
+
+// var backgroundColorChange = function(event){
+
+// 	var widthOfBrowser = window.innerWidth;
+// 	var heightOfBrowser = window.innerHeight;
+
+// 	// console.log("browser size: ", widthOfBrowser, heightOfBrowser)
+// 	// console.log("mouse position: ", event.pageX, event.pageY)
+
+// 	var container = document.querySelector(".container");
+// 	var containerItems = document.querySelector(".rec2");
+
+// 	var percentageX = event.pageX/widthOfBrowser;
+// 	var blue1 = 30 + (5 * (percentageX));
+
+// 	var percentageY = event.pageY/heightOfBrowser;
+// 	var blue2 = 700 * (percentageY);
+
+// 	containerItems.style.backgroundColor = `rgb(${ blue1 },0,${blue2})`;
+
+// }
+
+// // event listener: 
+// window.addEventListener("mousemove", backgroundColorChange)
 
 
 
