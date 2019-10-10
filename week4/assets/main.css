@@ -28,8 +28,8 @@ button {
   left:50%;
   transform:translateX(-50%);
   top: 2vh;
-  width: 60vw;
-  padding: 100px;
+  width: 70vw;
+  padding: 80px;
 }
 
 
@@ -43,10 +43,11 @@ button {
 }
 
 .rec2 {
-  width: 5px;
-  height: 50vh;
+  width: 2px;
+  height: 20vh;
   background-color: red;
   margin: 20px;
+  position: absolute;
   display: inline-block;
 }
 
@@ -60,16 +61,12 @@ button {
 
 #wrapper2 {
   position: fixed;
-  width: 100vw;
-  position:absolute;
-  left:50%;
-  transform:translateX(-50%);
-
-
 }
+
 .rec4 {
-  width: 100px;
-  height: 100px;
+  width: 50px;
+  height: 50px;
+  margin: 10px;
   background-color: black;
   display: inline-block;
 

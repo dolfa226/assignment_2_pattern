@@ -45,16 +45,13 @@ var turnThisRed = function (){
 	}
 }
 
-
 myButton.addEventListener("click", turnThisRed)
+
 
 var backgroundColorChange = function(event){
 
 	var widthOfBrowser = window.innerWidth;
 	var heightOfBrowser = window.innerHeight;
-
-	// console.log("browser size: ", widthOfBrowser, heightOfBrowser)
-	// console.log("mouse position: ", event.pageX, event.pageY)
 
 	var body = document.querySelector(".container");
 
@@ -72,18 +69,16 @@ window.addEventListener("mousemove", backgroundColorChange)
 
 
 
-// myButton.addEventListener("click", turnThisRed)
+
+
 
 // var backgroundColorChange = function(event){
 
 // 	var widthOfBrowser = window.innerWidth;
 // 	var heightOfBrowser = window.innerHeight;
 
-// 	// console.log("browser size: ", widthOfBrowser, heightOfBrowser)
-// 	// console.log("mouse position: ", event.pageX, event.pageY)
-
 // 	var container = document.querySelector(".container");
-// 	var containerItems = document.querySelector(".rec2");
+// 	var containerItems = container.querySelectorAll(".rec2");
 
 // 	var percentageX = event.pageX/widthOfBrowser;
 // 	var blue1 = 30 + (5 * (percentageX));
@@ -95,7 +90,6 @@ window.addEventListener("mousemove", backgroundColorChange)
 
 // }
 
-// // event listener: 
 // window.addEventListener("mousemove", backgroundColorChange)
 
 
@@ -111,6 +105,6 @@ var myLoopFunction = function(i){
 	 `);
 }
 
-for (var i = 0; i < 106; i++) {
+for (var i = 0; i < 200; i++) {
 	setTimeout(myLoopFunction, i*100, i)
 }

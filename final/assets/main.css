@@ -1,0 +1,82 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-style: normal;
+  font-weight: normal;
+}
+
+body, html{
+	padding: 0;
+	margin: 0;
+  font-size: 20px;
+  background-color:black;
+}
+
+
+#wrapper {
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+}
+
+.square {
+  width: 3vw;
+  height: 3vw;
+  background-color: black;
+  float: left;
+  margin: 1vw;
+}
+
+
+.square2 {
+  width: 3vw;
+  height: 3vw;
+  background-color: white;
+  float: left;
+  margin: 1vw;
+}
+
+#wrapper2 {
+  top: 0;
+  left: 0;
+  width: 40vw;
+}
+
+.whitesq {
+  width: 5vw;
+  height: 5vw;
+  border: white solid 1px;
+  opacity: .4;
+  z-index: 200;
+  float: left;
+  margin: 10px;
+  background-color: black;
+
+}
+
+#wrapper3 {
+  width: 70vw;
+  height: 100vw;
+  left: 0;
+  top: 0;
+}
+
+
+
+.whiterec {
+  width: 1vw;
+  height: 1vw;
+  background: yellow;
+  z-index: 100;
+  float: left;
+  margin: 10px;
+
+}
+
+
+
+
+
+
