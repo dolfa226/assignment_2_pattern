@@ -12,6 +12,8 @@ for (var i = 0; i < 200; i++) {
 
 	<div class="square3"></div>
 
+	<div class="square2"></div>
+
 
 
 
@@ -34,13 +36,12 @@ var backgroundColorChange = function(event){
 	var containerItems = document.querySelectorAll(".square");
 
 	var percentageY = event.pageY/heightOfBrowser;
-	var blue1 =  60 + (10 * (percentageY));
-	var blue2 = 255 * (percentageY);
+	var blueA = 255 * (percentageY);
 
 		// console.log(containerItems);
 
 		for (let index = 0; index < containerItems.length; index++) {
-			containerItems[index].style.backgroundColor = `rgb(0, 0,${blue2})`;
+			containerItems[index].style.backgroundColor = `rgb(0, 0,${blueA})`;
 		}
 
 }
@@ -58,14 +59,14 @@ var backgroundColorChange2 = function(event){
 	var containerItems = document.querySelectorAll(".square2");
 
 	var percentageX = event.pageX/widthOfBrowser;
-	var red1 = 30 + (5 * (percentageX));
+	var blueB1 = 30 + (5 * (percentageX));
 
-	var red2 = 700 * (percentageX);
+	var blueB2 = 700 * (percentageX);
 
 		// console.log(containerItems);
 
 		for (let index = 0; index < containerItems.length; index++) {
-			containerItems[index].style.backgroundColor = `rgb(${ red1 },10,${red2})`;
+			containerItems[index].style.backgroundColor = `rgb(${blueB1},10,${blueB2})`;
 		}
 
 }
@@ -73,29 +74,21 @@ var backgroundColorChange2 = function(event){
 window.addEventListener("mousemove", backgroundColorChange2)
 
 
-
-
-//sq3
 var backgroundColorChange3 = function(event){
 
 	var widthOfBrowser = window.innerWidth;
 	var heightOfBrowser = window.innerHeight;
 
-
-	// var container = document.querySelector(".container");
 	var containerItems = document.querySelectorAll(".square3");
 
 	var percentageX = event.pageX/widthOfBrowser;
-	var red3 = 300 + (5 * (percentageX));
+	var blueC1 = percentageX;
 
 	var percentageY = event.pageY/heightOfBrowser;
-	var red4 =  60 + (10 * (percentageY));
-
-
-		// console.log(containerItems);
+	var blueC2 =  200 + (10 * (percentageY));
 
 		for (let index = 0; index < containerItems.length; index++) {
-			containerItems[index].style.backgroundColor = `rgb(${ red4 },10,${red3})`;
+			containerItems[index].style.backgroundColor = `rgb(${blueC1},10,${blueC2})`;
 		}
 
 }
@@ -107,7 +100,8 @@ window.addEventListener("mousemove", backgroundColorChange3)
 
 
 
-for (var i = 0; i < 300; i++) {
+
+for (var i = 0; i < 400; i++) {
 
 	var rotation = Math.round((i/20) + 30);
 
